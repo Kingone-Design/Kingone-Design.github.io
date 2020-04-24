@@ -2,3 +2,4 @@
 [0424/115632.398:ERROR:registration_protocol_win.cc(131)] TransactNamedPipe: 管道已結束。 (0x6D)
 [0424/120832.167:ERROR:registration_protocol_win.cc(131)] TransactNamedPipe: 管道已結束。 (0x6D)
 [0424/120843.450:ERROR:registration_protocol_win.cc(131)] TransactNamedPipe: 管道已結束。 (0x6D)
+[0424/162739.402:ERROR:registration_protocol_win.cc(131)] TransactNamedPipe: 管道已結束。 (0x6D)
