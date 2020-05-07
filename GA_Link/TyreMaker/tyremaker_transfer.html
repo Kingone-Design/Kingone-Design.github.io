@@ -6,19 +6,23 @@
     <script>
         var whatSystem = navigator.userAgent;
         var content = document.getElementById('content');
+        var platform;
         if(whatSystem.match(/android/i))
         {
-            content.textContent = 'Andoird';
+            platform = 'Andoird';
+            content+=platform;
             document.location.href="https://play.google.com/store/apps/details?id=com.Kingone.TyreMaker";
         }
         else if(whatSystem.match(/(iphone|ipad|ipod);?/i))
         {
-            content.textContent = 'IOS';
+            platform = 'IOS';
+            content +=platform;
             document.location.href="https://apps.apple.com/app/id1502224189";
         }
         else
         {
-            content.textContent = 'PC';
+            platform = 'PC';
+            content +=platform;
         }
     </script>
   </head>
