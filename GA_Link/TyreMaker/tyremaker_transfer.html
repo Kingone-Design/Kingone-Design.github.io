@@ -7,10 +7,12 @@
         var whatsystem = navigator.userAgent;
         if(WhatSystem.match(/android/i))
         {
+            document.getElementById('content').textContent = 'Andoird';
             document.location.href="https://play.google.com/store/apps/details?id=com.Kingone.TyreMaker";
         }
         else if(WhatSystem.match(/(iphone|ipad|ipod);?/i))
         {
+            document.getElementById('content').textContent = 'IOS';
             document.location.href="https://apps.apple.com/app/id1502224189";
         }
         else
@@ -20,6 +22,6 @@
     </script>
   </head>
   <body>
-    
+    <div id="content"></div>
   </body>
 </html>
