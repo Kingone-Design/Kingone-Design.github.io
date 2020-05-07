@@ -13,18 +13,21 @@
         {
             console.log('Android');
             content.textContent+=whatSystem;
+            document.write(whatSystem);
             document.location.href="https://play.google.com/store/apps/details?id=com.Kingone.TyreMaker";
         }
         else if(whatSystem.match(/iPhone|iPad/i))
         {
             console.log('IOS');
             content.textContent +=whatSystem;
+            document.write(whatSystem);
             window.location.href ="https://apps.apple.com/app/id1502224189";
         }
         else
         {
             console.log('another');
             content.textContent +=whatSystem;
+            document.write(whatSystem);
         }
     </script>
   </head>
