@@ -5,23 +5,24 @@
     <title>Transfer...</title>
     <script>
         var whatSystem = navigator.userAgent;
+        var content = document.getElementById('content');
         if(whatSystem.match(/android/i))
         {
-            document.getElementById('content').textContent = 'Andoird';
+            content.textContent = 'Andoird';
             document.location.href="https://play.google.com/store/apps/details?id=com.Kingone.TyreMaker";
         }
         else if(whatSystem.match(/(iphone|ipad|ipod);?/i))
         {
-            document.getElementById('content').textContent = 'IOS';
+            content.textContent = 'IOS';
             document.location.href="https://apps.apple.com/app/id1502224189";
         }
         else
         {
-            document.getElementById('content').textContent = 'PC';
+            content.textContent = 'PC';
         }
     </script>
   </head>
   <body>
-    <div id="content"></div>
+    <div id="content">運行環境</div>
   </body>
 </html>
