@@ -10,12 +10,14 @@
         if(whatSystem.match(/android/i))
         {
             platform = 'Andoird';
+            console.log('Android');
             content+=platform;
             document.location.href="https://play.google.com/store/apps/details?id=com.Kingone.TyreMaker";
         }
         else if(whatSystem.match(/iPhone|iPad/i))
         {
             platform = 'IOS';
+            console.log('IOS');
             content +=platform;
             window.location.href ="https://apps.apple.com/app/id1502224189";
             /*if (app.Name == "Safari") 
@@ -31,6 +33,7 @@
         }
         else
         {
+            console.log('another');
             platform = 'PC';
             content +=platform;
         }
