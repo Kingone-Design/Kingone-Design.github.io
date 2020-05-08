@@ -3,18 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Transfer...</title>
-    <style>
-      .img-container {
-        height: 150;
-        width: 150;
-        max-width: 100%;
-        max-height: 100%;	 
-        display:flex;
-        align-items: center;
-        margin: auto;
-        text-align: center;
-      }
-    </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script  async src="https://www.googletagmanager.com/gtag/js?id=UA-165869053-1"></script>
     <script>
@@ -24,25 +12,19 @@
 
         gtag('config', 'UA-165869053-1');
     </script>
-
   </head>
   <body>
-    <div class="img-container">
-      <!--><img src="assets/Cat.jpg" alt="AppLogo" width="100" height="100"><!-->
-    </div>
-    
-    <div id="div1">運行環境</div>
   </body>
   <script>
     var whatSystem = navigator.userAgent;
-    var content = document.getElementById('div1');
+    //var content = document.getElementById('div1');
     var platform;
 
     console.log(whatSystem);
     if(whatSystem.match(/android/i))
     {
         console.log('Android');
-        content.textContent+=whatSystem;
+        //ontent.textContent+=whatSystem;
         //document.write(whatSystem);
         setTimeout(function(){document.location.href="https://play.google.com/store/apps/details?id=com.Kingone.TyreMaker";} , 500);   
         
@@ -50,15 +32,16 @@
     else if(whatSystem.match(/iPhone|iPad|Mac/i))
     {
         console.log('IOS');
-        content.textContent +=whatSystem;
+        //content.textContent +=whatSystem;
         //document.write(whatSystem);
         setTimeout(function(){document.location.href="https://apps.apple.com/app/id1502224189";} , 250);   
     }
     else
     {
         console.log('another');
-        content.textContent +=whatSystem;
+        //content.textContent +=whatSystem;
         //document.write(whatSystem);
+        setTimeout(function(){document.location.href="http://www.nankang-tyre.com";} , 250);   
     }
 </script>
 </html>
