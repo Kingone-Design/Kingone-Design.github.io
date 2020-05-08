@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Transfer...</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script  async src="https://www.googletagmanager.com/gtag/js?id=UA-165869053-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-165869053-1');
+    </script>
+
+  </head>
+  <body>
+    <img src="assets/Cat.jpg"alt="AppLogo" class="class/center.css">
+    <div id="div1">運行環境</div>
+  </body>
+  <script>
+    var whatSystem = navigator.userAgent;
+    var content = document.getElementById('div1');
+    var platform;
+
+    console.log(whatSystem);
+    if(whatSystem.match(/android/i))
+    {
+        console.log('Android');
+        content.textContent+=whatSystem;
+        document.write(whatSystem);
+        setTimeout(function(){document.location.href="https://play.google.com/store/apps/details?id=com.Kingone.TyreMaker";} , 500);   
+        
+    }
+    else if(whatSystem.match(/iPhone|iPad|Mac/i))
+    {
+        console.log('IOS');
+        content.textContent +=whatSystem;
+        document.write(whatSystem);
+        setTimeout(function(){document.location.href="https://apps.apple.com/app/id1502224189";} , 250);   
+    }
+    else
+    {
+        console.log('another');
+        content.textContent +=whatSystem;
+        document.write(whatSystem);
+    }
+</script>
+</html>
