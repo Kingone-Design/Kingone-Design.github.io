@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "2020_KingOne_WebExhibition",
+"productVersion": "0.1",
+"dataUrl": "WebGLTestUrl.data.unityweb",
+"wasmCodeUrl": "WebGLTestUrl.wasm.code.unityweb",
+"wasmFrameworkUrl": "WebGLTestUrl.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.11f1"
+}
