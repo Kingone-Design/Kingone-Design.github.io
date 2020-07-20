@@ -1,0 +1,38 @@
+.msgBox
+{
+  display:flex;
+  position: absolute;   /* ★ */
+  justify-content:center;
+  align-items:center;  
+  width: 99%;
+  height: 99%;
+
+  background-color: #ddd;
+
+  z-index: -3;
+}
+
+.center
+{
+  display:flex;
+  position: absolute;
+  justify-content:center;
+  align-items:center;
+  margin-left: auto;
+  margin-right: auto;
+  top:150%;
+  width: 200%;
+  font-size:30px;
+  
+}
+.imgAlign
+{
+  display:flex;
+  position: absolute;
+  justify-content:center;
+  align-items:center;
+  margin-left: auto;
+  margin-right: auto;
+  top:10%;
+
+}
