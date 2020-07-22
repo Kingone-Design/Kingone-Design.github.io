@@ -15,25 +15,33 @@
     
   </head>
   <body>
-
-    <div class="msgBox"> 
+  <div id="WarningBox" style="display: none">
+    <div id="WarningMsg" class="msgBox"> 
         <div class="imgAlign">
             <img src="img/oops.png"  width="256" height="256" >
             <div class="center">
                 <p>
                     無法跳轉嗎?<br><br>
                     請試試:<br> 
-                    1.重新整理<br>
+                    1.請確認網路連線順暢後，點擊重新整理<br>
                     2.設定->Safari->清除瀏覽紀錄和網頁資料，重新整理<br>
                 </p>
                 
             </div>
         </div>
     </div>
+  </div>
 
   </body>
   <script>  
-    setTimeout(window.close,8000);
+    setTimeout(function(){
+
+      WarningBox.style.display='';
+
+    },3000);
+  </script>
+  <script>  
+    setTimeout(window.close,10000);
   </script>
 
   <script>
