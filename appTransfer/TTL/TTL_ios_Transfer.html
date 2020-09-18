@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+    <meta http-equiv="Pragma" content="no-cache" >
+    <meta http-equiv="Cache-Control" content="no-cache" >
+    <meta http-equiv="Expires" content="0" >
+
+    <title>Transfer to Appstore...</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta http-equiv="refresh" content="0.5;url=https://apps.apple.com/tw/app/%E5%8F%B0%E9%85%92%E7%94%9F%E6%8A%80-ttl-bio-tech/id1523637834">
+    <!--https://biotech.ttl.com.tw/-->
+
+    
+  </head>
+  <body>
+  <div id="WarningBox" style="display: none">
+    <div id="WarningMsg" class="msgBox"> 
+        <div class="imgAlign">
+            <img src="img/oops.png"  width="256" height="256" >
+            <div class="center">
+                <p>
+                    無法跳轉嗎?<br><br>
+                    請試試:<br> 
+                    1.請確認網路連線順暢後，點擊重新整理<br>
+                    2.設定->Safari->清除瀏覽紀錄和網頁資料，重新整理<br>
+                </p>
+                
+            </div>
+        </div>
+    </div>
+  </div>
+
+  </body>
+  <script>  
+    setTimeout(function(){
+
+      WarningBox.style.display='';
+
+    },3000);
+  </script>
+  <script>  
+    setTimeout(window.close,10000);
+  </script>
+
+  <script>
+    window.onpageshow = function(event) 
+    {
+　　          if (event.persisted) 
+            {
+　　　    　      window.location.reload()
+　　          }             
+    };
+</script>
+</html>
